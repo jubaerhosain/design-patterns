@@ -11,6 +11,16 @@
  * Bridge between the Abstraction and the Implementation
  */
 
+/**
+ * Lets to split large class or closely related classes into 2 hierarchies -
+ * abstraction and implementation.
+ * These hierarchies are independent of each other and are used whenever we need
+ * to decouple an abstraction from
+ * implementation. This is called a Bridge pattern because it acts as a bridge
+ * between the abstract class and
+ * the implementation class
+ */
+
 // Abstraction
 interface Shape {
     void draw();

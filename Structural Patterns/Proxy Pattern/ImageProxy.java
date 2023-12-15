@@ -2,9 +2,10 @@
  * The Proxy Design Pattern provides an object representing another object.
  * It acts as an intermediary or placeholder, controlling access to the real
  * object.
- * This can be useful for various purposes, such as controlling access, logging,
+ * This can be useful for various purposes, such as "controlling access", "logging",
  * caching, or
- * delaying the instantiation of the real object until it is actually needed.
+ * "delaying the instantiation" or "azy initialization" of the real object until it is actually needed.
+ * 
  */
 
 /**

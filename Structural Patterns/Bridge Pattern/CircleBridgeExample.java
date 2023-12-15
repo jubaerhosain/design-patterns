@@ -9,9 +9,7 @@
  * and allow them to evolve separately.
  * 
  * Bridge between the Abstraction and the Implementation
- */
-
-/**
+ *
  * Lets to split large class or closely related classes into 2 hierarchies -
  * abstraction and implementation.
  * These hierarchies are independent of each other and are used whenever we need
@@ -19,6 +17,18 @@
  * implementation. This is called a Bridge pattern because it acts as a bridge
  * between the abstract class and
  * the implementation class
+ */
+
+/**
+ * There are 4 main elements of Bridge Pattern. They are:
+ * 
+ * 1. Abstraction – This is the core of the pattern and it defines its crux. This
+ * contains a reference to the implementer.
+ * 2. Refined Abstraction – This extends the abstraction and takes refined details
+ * of the requirements and hides it from the implementors.
+ * 3. Implementer – This is the interface for the implementation classes.
+ * 4. Concrete Implementation – These are the concrete implementation classes that
+ * implement the Implementer interface.
  */
 
 // Abstraction

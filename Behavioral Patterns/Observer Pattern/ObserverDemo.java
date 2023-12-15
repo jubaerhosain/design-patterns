@@ -8,6 +8,24 @@ import java.util.List;
  * all its dependents are notified and updated automatically.
  */
 
+/**
+ * This design pattern has 3 main components:
+ * 
+ * 1. Subject - This can be an interface or an abstract class that defines
+ * operations for attaching (registerObserver()) and detaching the observers
+ * (removeObserver()) to the subject.
+ * 2. Concrete Subject - This is a concrete class of the Subject. This maintains
+ * the object state and whenever any change occurs in that state, the observers
+ * are notified about it using notifyObservers() method.
+ * 3. Observer - This is an interface or an abstract class that defines the
+ * operations for notifying this object (update()). One real work example of
+ * this pattern is Facebook or Twitter. Whenever a person updates the status,
+ * all the followers would get a notification about his update. An observer can
+ * get the notification of the subject as long as it is subscribed or keeping
+ * track of it.
+ * 
+ */
+
 interface Subject {
 
     // methods to register and unregister observers

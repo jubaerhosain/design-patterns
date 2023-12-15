@@ -6,8 +6,7 @@
  * 
  * It is also known as Action or Transaction.
  * 
- * It is used when we need to support rollback, logging or transaction functionality.
-
+ * It is used when we need to support rollback, logging or "transaction functionality".
  */
 
 interface ActionListenerCommand {

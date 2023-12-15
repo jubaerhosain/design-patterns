@@ -4,6 +4,12 @@
  * 3. The Decorator Pattern is also known as Wrapper.
  */
 
+/**
+ * They are mostly used to apply SRP (Single Responsibility Principle) as we
+ * divide functionalities
+ * into classes with unique concerns.
+ */
+
 // Component Interface
 interface Car {
     public void assemble();

@@ -5,6 +5,20 @@ import java.util.Scanner;
  * any object in the chain.
  * The chain of responsibility pattern creates a chain of receiver objects for a
  * request.
+ * 
+ * Express middleware system in Node.js exhibits characteristics of the Chain of
+ * Responsibility pattern.
+ */
+
+/**
+ * There are 3 components of this design, they are:
+ * 
+ * 1. Client: This is the point of request origination and the component that
+ * accesses the handler for handling the request.
+ * 2. Handler: Handler can either be a class or an interface that received the
+ * request primarily and dispatches it to the chain of handlers. This Handler
+ * knows only the first handler of the chain.
+ * 3. Concrete Handlers: These are the actual request handlers in sequential order.
  */
 
 class Currency {

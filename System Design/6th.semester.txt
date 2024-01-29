@@ -1,0 +1,4 @@
+Introductory slide - 4-24,  42-75 , SOLID : Read these topics mostly for theory
+Architectural Design - patterns in the book + steps in the book (follow class but memorize the step names from the book)+ Broker+ Model-View-Controller+ (shared data and blackboard - these were not taught from slides but from book, nevertheless you may go through it for interesting perspectives)
+Component-Level Design: All the steps from the book (follow class but memorize the step names from the book) and full state chart slide, remember that not following UML structures properly which result in deduction of marks
+UI Design: Golden rules + material posted in class, remember that it is not possible to build prototype in exam scripts, you may be asked to show transition between screens instead.

@@ -1,0 +1,42 @@
+Whether to use direct HTTP, a message queue, or pub/sub for inter-service communication depends on a number of factors, including:
+
+* **Reliability:** Message queues and pub/sub are more reliable than direct HTTP, as they can guarantee delivery of messages even if one of the services is unavailable.
+* **Scalability:** Message queues and pub/sub can be scaled more easily than direct HTTP, as they can decouple the production and consumption of messages.
+* **Asynchronicity:** Message queues and pub/sub are asynchronous, meaning that the producer of a message does not need to wait for the consumer to respond before continuing. This can improve performance and scalability.
+* **Complexity:** Message queues and pub/sub can add complexity to your system, as they require additional infrastructure and code to implement.
+
+In general, you should use direct HTTP for inter-service communication when:
+
+* Reliability is not critical.
+* Scalability is not a concern.
+* Synchronicity is required.
+* Complexity is a concern.
+
+You should use a message queue or pub/sub for inter-service communication when:
+
+* Reliability is critical.
+* Scalability is a concern.
+* Asynchronicity is required.
+* Complexity is acceptable.
+
+Here are some specific examples of when to use each type of inter-service communication:
+
+**Direct HTTP:**
+
+* A user service calling an authentication service to authenticate a user.
+* A product service calling a pricing service to get the price of a product.
+* A shopping cart service calling a payment service to process a payment.
+
+**Message queue:**
+
+* A post service sending a message to a notification service when a new post is created.
+* An order service sending a message to a fulfillment service when an order is placed.
+* A payment service sending a message to a fraud detection service to check for fraud.
+
+**Pub/sub:**
+
+* A social media service publishing messages to all of a user's followers when they post something new.
+* A news service publishing messages to all of its subscribers when a new article is published.
+* A real-time analytics service publishing messages to all of its subscribers with the latest data.
+
+Ultimately, the best way to decide which type of inter-service communication to use is to consider your specific requirements. If you are unsure, it is best to err on the side of caution and use a message queue or pub/sub, as this will give you more flexibility and scalability in the future.
